@@ -6,7 +6,9 @@
     margin: 0;
     padding: 0;
 }
-
+.title {
+    color: burlywood;
+}
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -47,7 +49,7 @@ a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
-
+    
 }
 
 a:hover {
@@ -163,6 +165,10 @@ section {
     height: 80vh;    
 }
 
+.profile-pic {
+    border-radius: 2rem;
+}
+
 .section__pic-container {
     display: flex;
     height: 400px;
@@ -204,6 +210,7 @@ section {
 .icon{
     cursor: pointer;
     height: 2rem;
+    
 }
 
 /*BUTTONS*/
@@ -248,11 +255,11 @@ section {
 #about {
     position: relative;
 }
+
 .about-containers{
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
     margin-top: 2rem;
-
 }
 
 .about-details-container {
@@ -268,6 +275,15 @@ section {
     border-radius: 2rem;
 }
 
+.about-containers div{   
+    transition: all 300ms ease-in-out;   
+}
+.about-containers div:hover{
+    background: rgb(239, 219, 195);
+    transform: translateY(-10px);
+    transition: all 300ms ease-in-out;
+    cursor: default;
+}
 .arrow {
     position: absolute;
     right: -5rem;
@@ -294,3 +310,171 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+.experience-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;    
+    margin-top: 2rem;
+    display: flex;
+}
+.experience-containers div{   
+    transition: all 300ms ease-in-out;   
+}
+.experience-containers div:hover{
+    background: rgb(239, 219, 195);
+    transform: translateY(-10px);
+    transition: all 300ms ease-in-out;
+    cursor: default;
+}
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+
+}
+
+article .icon {
+    cursor: default;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer p, h3{
+    color: rgb(3, 3, 3);
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.1),#F1DFC9);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5 50px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.btn.btn-color-2.project-btn{
+    margin-top: 20px;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-container p {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  
+  /* FOOTER SECTION */
+  
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+
+  /* TRANSITION */
+  .hidden{
+    opacity: 0;
+  }
+
+  .show{
+    opacity: 1;
+  }
