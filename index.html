@@ -6,13 +6,16 @@
     <title>Lois Desembrana</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <script defer src="app.js"></script>
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Lois</div>
+        <div class="logo">
+          <h2>Lois</h2>
+          <h2>Lois</h2>
+        </div>
         <div>
             <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Project</a></li>
@@ -29,6 +32,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
@@ -36,22 +40,22 @@
             </div>
         </div>
     </nav>
-    <section class ="hidden" id="profile">
+    <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic-1.jpg" alt="Lois profile picture" 
-            class ="profile-pic"/>
+            <img src="./assets/baymax.gif" alt="Lois profile picture" 
+            class ="profile-pic move"/>
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Lois Desembrana</h1>
-            <p class="section__text__p2">Computer Science Student</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
+            <p class="section__text__p1 move">Hello, I'm</p>
+            <h1 class="title move">Lois Desembrana</h1>
+            <p class="section__text__p2 move">A 2nd Year Computer Science Student</p>
+            <div class="btn-container move">
+                <!-- <button 
+                class="btn btn-color-2 move" 
                 onclick="window.open('./assets/resume-example.pdf')"
                 >Download CV
-            </button>
-                <button class="btn btn-color-1" 
+            </button> -->
+                <button class="btn btn-color-1 move" 
                 onclick="location.href='./#contact'"
                 >Contact Info
             </button>
@@ -60,25 +64,25 @@
                 <img 
                     src="./assets/linkedin.png" 
                     alt="My Linkedin Profile"
-                    class="icon" 
+                    class="icon move" 
                     onclick="window.open('https://linkedin.com/')"
                 />
                 
                 <img
                 src="./assets/github.png" alt="My GitHub Profile"
-                class="icon" onclick="window.open('https://github.com/dsmbrnLois')"
+                class="icon move" onclick="window.open('https://github.com/dsmbrnLois')"
                 />
                 
             </div>
         </div>
     </section>
-    <section class ="hidden" id="about">
+    <section id="about">
         <p class="section__text__p1">Get to Know More</p>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
+        <div class="section-container move">
             <div class="section__pic-container">
                 <img src="assets/about-pic.jpeg" alt="Profile Picture"
-                class="about-pic"
+                class="about-pic move"
                 />
             </div>
             <div class="about-details-container">
@@ -87,23 +91,33 @@
                         <img src="./assets/experience.png" alt="Experience icon"
                         class="icon"
                         />
-                        <h3>Experience</h3>
-                        <p>99+ years<br>Frontend Development</p>
+                        <h3>Academic Achievements</h3>
+                        <p>Dean's Lister - Mapua MCL (A.Y. 2022-2023)<br>
+                          With High Honors - Mapua MCL SHS (A.Y. 2020-2021, A.Y 2021-2022)<br>
+                          With Honors - Colegio de Santa Rosa de Lima (S.Y. 2016-2017, 
+                          S.Y. 2017-2018, S.Y. 2018-2019, S.Y. 2019-2020)
+                        </p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon"
                         class="icon"
                         />
                         <h3>Education</h3>
-                        <p>B.S. Computer Science<br>at Mapua Malayan Colleges Laguna</p>
+                        <p>Pursuing B.S. Computer Science<br>at Mapua Malayan Colleges Laguna</p>
                     </div>
                 </div>
                 <div class="text-container">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsa. Consequatur 
-                        voluptates iure itaque dolorem doloremque magni debitis quia veniam at assumenda, 
-                        inventore voluptas ipsam facilis tempore ex adipisci? 
-                        Nemo.
+                        Hello there! I am Lois Jeffrey A. Desembrana, a passionate 
+                        and dedicated 2nd-year student pursuing a Bachelor's degree in 
+                        Computer Science at Mapua Malayan Colleges Laguna. Embarking on this 
+                        exciting journey, I am fueled by a profound interest in the world of 
+                        technology and a strong desire to contribute to the ever-evolving field 
+                        of computer science. I am excited about the endless possibilities that 
+                        the world of computer science offers, and I am committed to making a meaningful 
+                        impact through my education and future endeavors. Join me on this thrilling journey 
+                        as I navigate the complexities of the digital landscape, solve real-world problems, 
+                        and contribute to the ever-evolving landscape of technology.
                     </p>
                 </div>
             </div>
@@ -111,10 +125,10 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#experience'">
     </section>
-    <section class ="hidden" id="experience">
+    <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
-        <div class = "experience-details-container">
+        <div class = "experience-details-container move">
             <div class="experience-containers">
                 <div class="details-container">
                   <h2 class="experience-sub-title">Web Development</h2>
@@ -196,107 +210,49 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#projects'">
     </section>
-    <section class ="hidden" id="projects">
+    <section id="projects">
         <p class="section__text__p1">Browse my Recent</p>
         <h1 class="title">Projects </h1>
-        <div class="project-list">
+        <div class="project-list move">
           <div class="project">
-            <img src="assets/4pics.png" alt="project 1">
+            <img src="assets/4pics.png" alt="4 pics 1 word">
             <div class="layer">
-              <h3>Project 1</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <h3>4 pics 1 word</h3>
+              <p>A recreation of the game 4 pics 1 word using basic OOP concepts in Python and Tkinter</p>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
                 View
             </button>
             </div>
           </div>
           <div class="project">
-            <img src="assets/Clothera.png" alt="project 2">
+            <img src="assets/clothera1.png" alt="Clothera">
             <div class="layer">
               <h3>Clothera</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+              <p>Clothera is a futuristic virtual wardrobe assistant. 
+                With the ability to upload or shop preferred clothing items, individuals can achieve a precise, real-time fit using only their camera lens.</p>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.canva.com/design/DAFjm28wcCM/0MgOEc9Gy9sk4wWRwAEYSQ/view?mode=prototype'">
                 View
             </button>
             </div>
           </div>
           <div class="project">
-            <img src="assets/JeepneyRush.png" alt="project 3">
+            <img src="assets/JeepneyRush.png" alt="JeepneyRush">
             <div class="layer">
               <h3>Jeepney Rush</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.mmemfmmemfemfemfem</p>
+              <p>“Jeepney Rush: Zombie Escape" is an immersive 2D game that offers players a perspective of a top-down view. This game focuses on a super jeepney tasked to deliver passengers across a zombie-infested city. The gameplay revolves around maneuvering a jeep through an apocalyptic city with zombies roaming free.</p>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/dsmbrnLois/JeepneyRush'">
                 View
             </button>
             </div>
           </div>
         </div>
-        <!-- <div class="experience-details-container">
-            <div class="project-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                            src="./assets/project-1.png"
-                            alt="Project 1"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Jeepney Rush</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                            src="./assets/project-2.png"
-                            alt="Project 2"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">4 pics 1 Word</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                            src="./assets/project-3.png"
-                            alt="Project 3"
-                            class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Clothera</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#contact'">
-
     </section>
-    <section class ="hidden" id="contact">
+    <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
+        <div class="contact-info-upper-container move">
           <div class="contact-info-container">
             <img
               src="./assets/email.png"
@@ -314,11 +270,13 @@
             <p><a href="https://www.facebook.com/DLoisJeff">Facebook</a></p>
           </div>
         </div>
+
       </section>
       <footer>
         <nav>
           <div class="nav-links-container">
             <ul class="nav-links">
+              <li><a href="#profile">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>

@@ -11,17 +11,61 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-
+    
 }
 
 html {
     scroll-behavior: smooth;
-}
+}   
 
 p {
     color: rgb(85, 85, 85)
 }
 
+.logo h2 {
+    color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.logo h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+.logo h2:nth-child(2) {
+    color: burlywood;
+    animation: animate 4s ease-in-out infinite;
+}
+  
+@keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+}
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+    );
+}
+}
 /*TRANSITION*/
 
 a, .btn {
@@ -192,6 +236,7 @@ section {
 .section__text__p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
+
 } 
 
 .title{
@@ -362,6 +407,9 @@ article {
 
 }
 
+#projects{
+    position: relative;
+}
 article .icon {
     cursor: default;
 }
@@ -389,7 +437,7 @@ article .icon {
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.1),#F1DFC9);
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#797570);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -405,10 +453,16 @@ article .icon {
     transition: height 0.5s;
 }
 .layer h3 {
+    color: white;
     font-weight: 500;
     margin-bottom: 30px;
     font-size: 24px;
 }
+
+.layer p{
+    color: white;
+}
+
 .btn.btn-color-2.project-btn{
     margin-top: 20px;
     text-align: center;
@@ -428,7 +482,7 @@ article .icon {
     height: 70vh;
   }
   
-  .contact-info-upper-container {
+.contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -439,7 +493,7 @@ article .icon {
     padding: 0.5rem;
   }
   
-  .contact-info-container {
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,34 +501,49 @@ article .icon {
     margin: 1rem;
   }
   
-  .contact-info-container p {
+.contact-info-container p {
     font-size: larger;
   }
   
-  .contact-icon {
+.contact-icon {
     cursor: default;
   }
   
-  .email-icon {
+.email-icon {
     height: 2.5rem;
   }
   
-  /* FOOTER SECTION */
+/* FOOTER SECTION */
   
-  footer {
+footer {
     height: 26vh;
     margin: 0 1rem;
   }
   
-  footer p {
+footer p {
     text-align: center;
   }
 
-  /* TRANSITION */
-  .hidden{
-    opacity: 0;
-  }
+/* animations */
+@keyframes enter-animation {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .move-animation {
+      animation: enter-animation 0.8s 1;
+    }
+}
 
-  .show{
-    opacity: 1;
-  }
+
+
+
+
+
+
