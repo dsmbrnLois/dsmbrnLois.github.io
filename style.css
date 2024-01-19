@@ -73,6 +73,10 @@ a, .btn {
 }
 
 /* DESKTOP-NAV */
+.desktop-nav{
+    position: fixed;
+    top:0;
+}
 nav, .nav-links{
     display: flex;
 }
