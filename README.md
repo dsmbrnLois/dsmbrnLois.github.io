@@ -36,6 +36,13 @@
 </p>
 <br>
 
+<h4>How you could improve your website in the future</h4>
+<p>I could improve my website more by enchancing the animations that I have used. Trying out a different scroll effect can help encourage my visitors to be
+    more engaged with the website. Additionally, I think the addition of more interactions that the visitors could engage it would also improve my website, plus a button for a dark mode would also be a nice addition. 
+</p>
+<br>
+
+
 
 
 
